@@ -1,14 +1,10 @@
-resource "google_project" "terra-effi-proj" {
-  provider = google
-  
-  name       = "terra-effi"
-#  project_id = "terra-effi-${random_id.project_id_suffix.hex}"
-  project_id = "terra-effi-415631"
+provider "google" {
+  project = var.project_id
+  region  = var.region
+}
 
-  billing_account = "01B8B9-870CC9-818D26 "
+resource "google_project" "terra-effi-proj" {
+  name            = "EFFICOM-IAC"
+  project_id      = var.project_id
+  billing_account = "01B8B9-870CC9-818D26"
 }
-/*
-resource "random_id" "project_id_suffix" {
-  byte_length = 4
-}
-*/
