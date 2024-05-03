@@ -1,5 +1,5 @@
 variable "project_id" {
-  default     = "terra-effi-372909"  // Spécifiez l'ID du projet ici
+  default     = "terra-effi-126383"  // Spécifiez l'ID du projet ici
 }
 
 variable "region" {
