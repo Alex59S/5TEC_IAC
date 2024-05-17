@@ -1,6 +1,6 @@
 resource "google_compute_instance_group" "webservers" {
   name        = "terraform-webservers"
-  description = "Terraform test instance group"
+  description = "Terraform instances"
   project = google_project.my_project.project_id
 
   instances = [
